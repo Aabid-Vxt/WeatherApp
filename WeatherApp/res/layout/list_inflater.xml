@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="7dip"
+    android:background="@drawable/inflater_bk"
+    android:orientation="vertical"
+    android:padding="3dip" >
+
+    <TextView
+        android:id="@+id/li_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="--/--/----"
+        android:textColor="#307C7E"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/li_maxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/li_date"
+        android:layout_below="@+id/li_desc"
+        android:layout_marginTop="16dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/li_minTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/li_maxTemp"
+        android:layout_alignBottom="@+id/li_maxTemp"
+        android:layout_alignParentRight="true"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/li_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/li_date"
+        android:layout_below="@+id/li_date"
+        android:layout_margin="3dip"
+        android:maxLines="3"
+        android:singleLine="false"
+        android:text="Medium Text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/li_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/li_main"
+        android:layout_below="@+id/li_main"
+        android:text="TextView"
+        android:textColor="#6D7B8D" />
+
+    <TextView
+        android:id="@+id/li_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/li_humidity"
+        android:gravity="center"
+        android:text="Humidity"
+        android:textColor="#786D5F"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:text="Max Temp"
+        android:textColor="#786D5F"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/li_minTemp"
+        android:gravity="center"
+        android:text="Min Temp"
+        android:textColor="#786D5F"
+        android:textSize="11sp" />
+
+</RelativeLayout>
